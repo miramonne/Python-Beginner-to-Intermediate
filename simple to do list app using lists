@@ -1,0 +1,25 @@
+#To do list App
+
+
+def addItem(list = []):
+    print("What are you feeling to do?")
+    question = input()
+    while(question != 'stop'):
+        question = input()
+        list.append(question)
+    return list
+
+
+print("To Do List App")
+
+myList = []
+if len(myList) == 0: 
+    print("Your to do list is empty")
+    print("Would you like to add a new item? Y/n")
+    inp = input()
+    if inp == "Y":
+      print("Type stop to finish:")
+      myList =  addItem(myList)
+      print(myList)
+        
+    
